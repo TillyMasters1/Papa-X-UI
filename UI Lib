@@ -193,9 +193,9 @@ function library:CreateMain()
         UIListLayout.Parent = Catagory
         UIListLayout.Padding = UDim.new(0, 5)
         
-        local Catagory = {}
+        local Container = {}
 
-        function Catagory:CreateSection()
+        function Container:CreateSection()
             local Section = Instance.new("Frame")
             local _1 = Instance.new("TextLabel")
 
@@ -218,7 +218,7 @@ function library:CreateMain()
             _1.TextSize = 16.000
             _1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
         end
-        return Catagory
+        return Container
     end
     return Main
 end
