@@ -197,6 +197,7 @@ function library:CreateMain()
 
         function Container:CreateSection()
             local Section = Instance.new("Frame")
+            local UIListLayout = Instance.new("UIListLayout")
             local _1 = Instance.new("TextLabel")
 
             Section.Name = "Section"
@@ -205,7 +206,11 @@ function library:CreateMain()
             Section.BackgroundTransparency = 1.000
             Section.Size = UDim2.new(0, 647, 0, 192)
 
-            _1.Name = "-1"
+            UIListLayout.Parent = Section
+            UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+            UIListLayout.Padding = UDim.new(0, 5)
+
+            _1.Name = "Title"
             _1.Parent = Section
             _1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             _1.BackgroundTransparency = 1.000
@@ -217,6 +222,39 @@ function library:CreateMain()
             _1.TextColor3 = Color3.fromRGB(100, 100, 100)
             _1.TextSize = 16.000
             _1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+            local Button = {}
+                
+            function Section:CreateButton(Name)
+                local Button = Instance.new("ImageButton")
+                local ButtonName = Instance.new("TextLabel")
+
+                Button.Name = "Button"
+                Button.Parent = Section
+                Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                Button.BackgroundTransparency = 1.000
+                Button.Position = UDim2.new(0, 0, 0.392105252, 0)
+                Button.Size = UDim2.new(0, 646, 0, 30)
+                Button.Image = "rbxassetid://2790382281"
+                Button.ImageColor3 = Color3.fromRGB(48, 48, 48)
+                Button.ScaleType = Enum.ScaleType.Slice
+                Button.SliceCenter = Rect.new(4, 4, 252, 252)
+
+                ButtonName.Name = "Button Name"
+                ButtonName.Parent = Button
+                ButtonName.AnchorPoint = Vector2.new(0.5, 0.5)
+                ButtonName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                ButtonName.BackgroundTransparency = 1.000
+                ButtonName.BorderSizePixel = 0
+                ButtonName.Position = UDim2.new(0.511049747, 0, 0.5, 0)
+                ButtonName.Size = UDim2.new(0.984208107, -5, 1, -5)
+                ButtonName.Font = Enum.Font.GothamBold
+                ButtonName.Text = Name
+                ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
+                ButtonName.TextSize = 14.000
+                ButtonName.TextXAlignment = Enum.TextXAlignment.Left
+            end
+            return Button
         end
         return Container
     end
