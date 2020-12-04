@@ -200,7 +200,7 @@ function library:CreateMain()
             local _1 = Instance.new("TextLabel")
 
             Section.Name = "Section"
-            Section.Parent = game.StarterGui["Papa X v.Dev"].Game.Catagory
+            Section.Parent = Catagory
             Section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Section.BackgroundTransparency = 1.000
             Section.Size = UDim2.new(0, 647, 0, 192)
