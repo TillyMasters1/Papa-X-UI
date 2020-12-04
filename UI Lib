@@ -225,7 +225,7 @@ function library:CreateMain()
 
             local Button = {}
                 
-            function Section:CreateButton(Name)
+            function Frame:CreateButton(Name)
                 local Button = Instance.new("ImageButton")
                 local ButtonName = Instance.new("TextLabel")
 
