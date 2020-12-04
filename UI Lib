@@ -196,22 +196,22 @@ function library:CreateMain()
         local Container = {}
 
         function Container:CreateSection()
-            local Section = Instance.new("Frame")
+            local Holder = Instance.new("Frame")
             local UIListLayout = Instance.new("UIListLayout")
             local _1 = Instance.new("TextLabel")
 
-            Section.Name = "Section"
-            Section.Parent = Catagory
-            Section.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Section.BackgroundTransparency = 1.000
-            Section.Size = UDim2.new(0, 647, 0, 192)
+            Holder.Name = "Holder"
+            Holder.Parent = Catagory
+            Holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Holder.BackgroundTransparency = 1.000
+            Holder.Size = UDim2.new(0, 647, 0, 192)
 
-            UIListLayout.Parent = Section
+            UIListLayout.Parent = Holder
             UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
             UIListLayout.Padding = UDim.new(0, 5)
 
             _1.Name = "Title"
-            _1.Parent = Section
+            _1.Parent = Holder
             _1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             _1.BackgroundTransparency = 1.000
             _1.BorderSizePixel = 0
@@ -225,12 +225,12 @@ function library:CreateMain()
 
             local Button = {}
                 
-            function Frame:CreateButton(Name)
+            function Section:CreateButton(Name)
                 local Button = Instance.new("ImageButton")
                 local ButtonName = Instance.new("TextLabel")
 
                 Button.Name = "Button"
-                Button.Parent = Section
+                Button.Parent = Holder
                 Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 Button.BackgroundTransparency = 1.000
                 Button.Position = UDim2.new(0, 0, 0.392105252, 0)
