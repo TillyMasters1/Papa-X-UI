@@ -168,10 +168,12 @@ function library:CreateMain()
     local_grocery_store.ImageRectOffset = Vector2.new(4, 524)
     local_grocery_store.ImageRectSize = Vector2.new(36, 36)
 
-    while true do
-        wait(0.005)
-        UIGradient.Rotation = UIGradient.Rotation + 2
-    end
+    spawn(function()
+     while true do
+      wait(0.005)
+      UIGradient.Rotation = UIGradient.Rotation + 2
+     end
+    end)
     
     local Main = {}
     
