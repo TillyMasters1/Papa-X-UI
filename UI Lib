@@ -1,0 +1,196 @@
+local library = {}
+
+function library:CreateMain()
+    local PapaXvDev = Instance.new("ScreenGui")
+    local Note = Instance.new("TextBox")
+    local Game = Instance.new("ImageLabel")
+    local LT2Title = Instance.new("TextLabel")
+    local LT2Settings = Instance.new("ImageButton")
+    local LT2bar1 = Instance.new("ImageLabel")
+    local Border = Instance.new("ImageLabel")
+    local UIGradient = Instance.new("UIGradient")
+    local LT2AB = Instance.new("Frame")
+    local Back = Instance.new("ImageLabel")
+    local MainXTitle = Instance.new("TextLabel")
+    local MainTitle = Instance.new("TextLabel")
+    local CatagoryList = Instance.new("ImageButton")
+    local account_circle = Instance.new("ImageButton")
+    local local_grocery_store = Instance.new("ImageButton")
+
+    PapaXvDev.Name = "Papa X v.Dev"
+    PapaXvDev.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+    Note.Name = "Note"
+    Note.Parent = PapaXvDev
+    Note.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Note.BackgroundTransparency = 1.000
+    Note.Position = UDim2.new(0.00300000003, -20, 0.959999979, 0)
+    Note.Selectable = false
+    Note.Size = UDim2.new(0, 151, 0, 59)
+    Note.ClearTextOnFocus = false
+    Note.Font = Enum.Font.GothamBold
+    Note.Text = "Papa X vDev"
+    Note.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Note.TextSize = 14.000
+
+    Game.Name = "Game"
+    Game.Parent = PapaXvDev
+    Game.Active = true
+    Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Game.BackgroundTransparency = 1.000
+    Game.BorderSizePixel = 0
+    Game.Position = UDim2.new(0.34868753, 0, 0.280213594, 0)
+    Game.Size = UDim2.new(0, 702, 0, 425)
+    Game.Image = "rbxassetid://3570695787"
+    Game.ImageColor3 = Color3.fromRGB(31, 31, 31)
+    Game.ScaleType = Enum.ScaleType.Slice
+    Game.SliceCenter = Rect.new(100, 100, 100, 100)
+    Game.SliceScale = 0.050
+
+    LT2Title.Name = "LT2Title"
+    LT2Title.Parent = Game
+    LT2Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    LT2Title.BackgroundTransparency = 1.000
+    LT2Title.BorderSizePixel = 0
+    LT2Title.Position = UDim2.new(0.40200001, 0, 0, 0)
+    LT2Title.Size = UDim2.new(0, 134, 0.0700000003, 0)
+    LT2Title.Visible = false
+    LT2Title.ZIndex = 2
+    LT2Title.Font = Enum.Font.GothamSemibold
+    LT2Title.Text = "Lumber Tycoon 2"
+    LT2Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    LT2Title.TextSize = 15.000
+
+    LT2Settings.Name = "LT2Settings"
+    LT2Settings.Parent = Game
+    LT2Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    LT2Settings.BackgroundTransparency = 1.000
+    LT2Settings.Position = UDim2.new(0.00899999961, 0, 0.00999999978, 0)
+    LT2Settings.Size = UDim2.new(0, 20, 0, 20)
+    LT2Settings.ZIndex = 2
+    LT2Settings.Image = "rbxassetid://3926307971"
+    LT2Settings.ImageRectOffset = Vector2.new(324, 124)
+    LT2Settings.ImageRectSize = Vector2.new(36, 36)
+
+    LT2bar1.Name = "LT2bar1"
+    LT2bar1.Parent = Game
+    LT2bar1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    LT2bar1.BackgroundTransparency = 1.000
+    LT2bar1.Size = UDim2.new(0.225071311, 544, 0.0700000003, 0)
+    LT2bar1.Image = "rbxassetid://3570695787"
+    LT2bar1.ImageColor3 = Color3.fromRGB(12, 12, 12)
+    LT2bar1.ScaleType = Enum.ScaleType.Slice
+    LT2bar1.SliceCenter = Rect.new(100, 100, 100, 100)
+    LT2bar1.SliceScale = 0.050
+
+    Border.Name = "Border"
+    Border.Parent = Game
+    Border.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Border.BackgroundTransparency = 1.000
+    Border.Position = UDim2.new(-0.00300000003, 0, -0.00300000003, 0)
+    Border.Size = UDim2.new(0, 706, 0, 429)
+    Border.ZIndex = 0
+    Border.Image = "rbxassetid://3570695787"
+    Border.ScaleType = Enum.ScaleType.Slice
+    Border.SliceCenter = Rect.new(100, 100, 100, 100)
+    Border.SliceScale = 0.040
+
+    UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(17, 17, 17)), ColorSequenceKeypoint.new(0.28, Color3.fromRGB(17, 17, 17)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 38, 0)), ColorSequenceKeypoint.new(0.73, Color3.fromRGB(17, 17, 17)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(17, 17, 17))}
+    UIGradient.Parent = Border
+
+    LT2AB.Name = "LT2AB"
+    LT2AB.Parent = Game
+    LT2AB.BackgroundColor3 = Color3.fromRGB(255, 38, 0)
+    LT2AB.BorderSizePixel = 0
+    LT2AB.Position = UDim2.new(0, 0, 0.0682352781, 0)
+    LT2AB.Size = UDim2.new(0, 702, 0.00800000038, 0)
+
+    Back.Name = "Back"
+    Back.Parent = Game
+    Back.BackgroundTransparency = 1.000
+    Back.Position = UDim2.new(0.959999979, 0, 0.00200000009, 0)
+    Back.Size = UDim2.new(0, 26, 0, 26)
+    Back.Image = "rbxassetid://4370337241"
+    Back.ScaleType = Enum.ScaleType.Fit
+
+    MainXTitle.Name = "MainXTitle"
+    MainXTitle.Parent = Game
+    MainXTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    MainXTitle.BackgroundTransparency = 1.000
+    MainXTitle.BorderSizePixel = 0
+    MainXTitle.Position = UDim2.new(0.43900001, 0, -0.00159051013, 0)
+    MainXTitle.Size = UDim2.new(0, 134, 0, 28)
+    MainXTitle.Font = Enum.Font.Arcade
+    MainXTitle.Text = "X"
+    MainXTitle.TextColor3 = Color3.fromRGB(255, 38, 0)
+    MainXTitle.TextSize = 25.000
+
+    MainTitle.Name = "MainTitle"
+    MainTitle.Parent = Game
+    MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    MainTitle.BackgroundTransparency = 1.000
+    MainTitle.BorderSizePixel = 0
+    MainTitle.Position = UDim2.new(0.386000007, 0, -0.00159051013, 0)
+    MainTitle.Size = UDim2.new(0, 134, 0, 28)
+    MainTitle.Font = Enum.Font.GothamSemibold
+    MainTitle.Text = "Papa"
+    MainTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    MainTitle.TextSize = 20.000
+    
+    CatagoryList.Name = "Catagory List"
+    CatagoryList.Parent = Game
+    CatagoryList.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+    CatagoryList.BackgroundTransparency = 1.000
+    CatagoryList.Position = UDim2.new(0, 1, 0.0748849064, 0)
+    CatagoryList.Size = UDim2.new(0, 34, 0, 393)
+    CatagoryList.Image = "rbxassetid://2790389767"
+    CatagoryList.ImageColor3 = Color3.fromRGB(35, 35, 35)
+    CatagoryList.ScaleType = Enum.ScaleType.Slice
+    CatagoryList.SliceCenter = Rect.new(8, 8, 248, 248)
+
+    account_circle.Name = "account_circle"
+    account_circle.Parent = CatagoryList
+    account_circle.BackgroundTransparency = 1.000
+    account_circle.Position = UDim2.new(0.118000001, 0, 0.0203562342, 0)
+    account_circle.Size = UDim2.new(0, 25, 0, 25)
+    account_circle.ZIndex = 2
+    account_circle.Image = "rbxassetid://3926307971"
+    account_circle.ImageRectOffset = Vector2.new(124, 204)
+    account_circle.ImageRectSize = Vector2.new(36, 36)
+
+    local_grocery_store.Name = "local_grocery_store"
+    local_grocery_store.Parent = CatagoryList
+    local_grocery_store.BackgroundTransparency = 1.000
+    local_grocery_store.Position = UDim2.new(0.118000001, 0, 0.109414756, 0)
+    local_grocery_store.Size = UDim2.new(0, 25, 0, 25)
+    local_grocery_store.ZIndex = 2
+    local_grocery_store.Image = "rbxassetid://3926305904"
+    local_grocery_store.ImageRectOffset = Vector2.new(4, 524)
+    local_grocery_store.ImageRectSize = Vector2.new(36, 36)
+
+    while true do
+        wait(0.005)
+        UIGradient.Rotation = UIGradient.Rotation + 2
+    end
+    
+    local Main = {}
+    
+    function Main:CreateCatagory()
+        local Catagory = Instance.new("Frame")
+        local UIListLayout = Instance.new("UIListLayout")
+
+        Catagory.Name = "Catagory"
+        Catagory.Parent = Game
+        Catagory.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Catagory.BackgroundTransparency = 1.000
+        Catagory.BorderSizePixel = 0
+        Catagory.ClipsDescendants = true
+        Catagory.Position = UDim2.new(0.0649999976, 0, 0.0900000036, 0)
+        Catagory.Size = UDim2.new(0, 655, 0, 380)
+
+        UIListLayout.Parent = Catagory
+        UIListLayout.Padding = UDim.new(0, 5)
+    end
+    return Main
+end
+return library
