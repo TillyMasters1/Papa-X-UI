@@ -195,7 +195,7 @@ function library:CreateMain()
         
         local Container = {}
 
-        function Container:CreateSection()
+        function Container:CreateSection(Name)
             local Holder = Instance.new("Frame")
             local UIListLayout = Instance.new("UIListLayout")
             local _1 = Instance.new("TextLabel")
@@ -218,7 +218,7 @@ function library:CreateMain()
             _1.LayoutOrder = -100
             _1.Size = UDim2.new(0, 71, 0, 17)
             _1.Font = Enum.Font.SourceSansSemibold
-            _1.Text = "Section"
+            _1.Text = Name
             _1.TextColor3 = Color3.fromRGB(100, 100, 100)
             _1.TextSize = 16.000
             _1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
