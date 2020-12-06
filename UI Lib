@@ -198,7 +198,8 @@ function library:CreateMain()
         function Container:CreateSection(Name)
             local Holder = Instance.new("Frame")
             local UIListLayout = Instance.new("UIListLayout")
-            local _1 = Instance.new("TextLabel")
+            local Title = Instance.new("Frame")
+            local TitleText = Instance.new("TextLabel")
 
             Holder.Name = "Holder"
             Holder.Parent = Catagory
@@ -210,18 +211,27 @@ function library:CreateMain()
             UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
             UIListLayout.Padding = UDim.new(0, 5)
 
-            _1.Name = "Title"
-            _1.Parent = Holder
-            _1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            _1.BackgroundTransparency = 1.000
-            _1.BorderSizePixel = 0
-            _1.LayoutOrder = -100
-            _1.Size = UDim2.new(0, 71, 0, 17)
-            _1.Font = Enum.Font.SourceSansSemibold
-            _1.Text = Name
-            _1.TextColor3 = Color3.fromRGB(100, 100, 100)
-            _1.TextSize = 16.000
-            _1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+            Title.Name = "Title"
+            Title.Parent = Holder
+            Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            Title.BackgroundTransparency = 1.000
+            Title.LayoutOrder = -100
+            Title.Size = UDim2.new(0, 71, 0, 17)
+
+            TitleText.Name = "Title Text"
+            TitleText.Parent = Title
+            TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            TitleText.BackgroundTransparency = 1.000
+            TitleText.BorderSizePixel = 0
+            TitleText.LayoutOrder = -100
+            TitleText.Position = UDim2.new(0, 14, 0, 0)
+            TitleText.Size = UDim2.new(0, 71, 0, 17)
+            TitleText.Font = Enum.Font.SourceSansSemibold
+            TitleText.Text = Name
+            TitleText.TextColor3 = Color3.fromRGB(100, 100, 100)
+            TitleText.TextSize = 16.000
+            TitleText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+            TitleText.TextXAlignment = Enum.TextXAlignment.Left
             
             spawn(function()
              Holder.Size = UDim2.new(0,0,0,Holder.UIListLayout.AbsoluteContentSize.Y)
