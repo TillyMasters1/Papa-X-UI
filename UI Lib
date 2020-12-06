@@ -226,7 +226,7 @@ function library:CreateMain()
             spawn(function()
              Holder.UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
               Holder.Size = UDim2.new(0,0,0,Holder.UIListLayout.AbsoluteContentSize.Y)
-             end
+             end)
             end)
 
             local Button = {}
