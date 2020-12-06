@@ -222,6 +222,10 @@ function library:CreateMain()
             _1.TextColor3 = Color3.fromRGB(100, 100, 100)
             _1.TextSize = 16.000
             _1.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+            
+            Holder.UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
+                Holder.Size = UDim2.new(0,0,0,Holder.UIListLayout.AbsoluteContentSize.Y)
+            end)
 
             local Button = {}
                 
