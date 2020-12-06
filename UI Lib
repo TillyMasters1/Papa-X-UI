@@ -271,7 +271,8 @@ function library:CreateMain()
             return Button
         end
         return Container
-        local UserInputService = game:GetService("UserInputService")
+        spawn(function()
+         local UserInputService = game:GetService("UserInputService")
 
         local dragging
         local dragInput
@@ -307,6 +308,7 @@ function library:CreateMain()
             if input == dragInput and dragging then
                 update(input)
             end
+        end)
         end)
     end
     return Main
