@@ -16,6 +16,7 @@ function library:CreateMain()
     local CatagoryList = Instance.new("ImageButton")
     local account_circle = Instance.new("ImageButton")
     local local_grocery_store = Instance.new("ImageButton")
+    local TweenService = game:GetService("TweenService")
 
     PapaXvDev.Name = "Papa X v.Dev"
     PapaXvDev.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
