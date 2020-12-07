@@ -309,12 +309,11 @@ function library:CreateMain()
                 ButtonName.TextSize = 14.000
                 ButtonName.TextXAlignment = Enum.TextXAlignment.Left
                 
-                spawn(function()
+             
                  Button.MouseEnter:Connect(function()
                   TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(0,0,0)}):Play()
                   TweenService:Create(Button, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(217,217,217)}):Play()
                  end)
-                end)
             end
             return Button
         end
