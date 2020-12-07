@@ -283,6 +283,7 @@ function library:CreateMain()
             function Button:CreateButton(Name)
                 local Button = Instance.new("ImageButton")
                 local ButtonName = Instance.new("TextLabel")
+                Click = rbxassetid://5988647626
 
                 Button.Name = "Button"
                 Button.Parent = Holder
@@ -317,10 +318,10 @@ function library:CreateMain()
                  TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255,255,255)}):Play()
                  TweenService:Create(Button, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(48,48,48)}):Play()
                 end)
-                 
+                
                 Button.MouseButton1Down:Connect(function()
-                 rbxassetid://5988647626:Play()
-                end
+                 Click:Play()
+                end)
             end
             return Button
         end
