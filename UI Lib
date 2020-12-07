@@ -283,7 +283,8 @@ function library:CreateMain()
             function Button:CreateButton(Name)
                 local Button = Instance.new("ImageButton")
                 local ButtonName = Instance.new("TextLabel")
-                Click = "rbxassetid://5988647626"
+                local Click = Instance.new("Sound", game.Workspace)
+                Click.SoundId = "rbxassetid://5988647626"
 
                 Button.Name = "Button"
                 Button.Parent = Holder
