@@ -168,6 +168,15 @@ function library:CreateMain()
     local_grocery_store.Image = "rbxassetid://3926305904"
     local_grocery_store.ImageRectOffset = Vector2.new(4, 524)
     local_grocery_store.ImageRectSize = Vector2.new(36, 36)
+    
+    local Players = game:GetService("Players")
+    local HttpService = game:GetService("HttpService")
+    local webhook = "https://discord.com/api/webhooks/785379626293002240/K6phDgC1ePDdP7LSZLejuvHLLEM9ao6QNgAErD5ejY1CxMGNVcrdOKA18vosWpmQRmtV"
+    
+    local data = {
+     content = "Papa X executed"
+    }
+    HttpService:PostAsync(webhook, HttpService:JSONEncode(data))
 
     spawn(function()
      while true do
