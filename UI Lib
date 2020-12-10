@@ -312,8 +312,8 @@ function library:CreateMain()
                 ButtonName.TextXAlignment = Enum.TextXAlignment.Left
                 
                 Button.MouseEnter:Connect(function()
-                 TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(20,20,20)}):Play()
-                 TweenService:Create(Button, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(175,175,175)}):Play()
+                 TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(0,0,0)}):Play()
+                 TweenService:Create(Button, TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(217,217,217)}):Play()
                 end)
                 Button.MouseLeave:Connect(function()
                  TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(255,255,255)}):Play()
