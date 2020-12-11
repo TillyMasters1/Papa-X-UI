@@ -2,7 +2,7 @@ local library = {}
 
 function library:CreateMain()
     local PapaXvDev = Instance.new("ScreenGui")
-    local Note = Instance.new("TextBox")
+    local Note = Instance.new("TextLabel")
     local Game = Instance.new("ImageLabel")
     local LT2Title = Instance.new("TextLabel")
     local LT2Settings = Instance.new("ImageButton")
@@ -19,7 +19,7 @@ function library:CreateMain()
     local TweenService = game:GetService("TweenService")
 
     PapaXvDev.Name = "Papa X v.Dev"
-    PapaXvDev.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    PapaXvDev.Parent = game.CoreGui
 
     Note.Name = "Note"
     Note.Parent = PapaXvDev
