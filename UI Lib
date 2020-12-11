@@ -318,7 +318,7 @@ function library:CreateMain()
                 ButtonName.BorderSizePixel = 0
                 ButtonName.Position = UDim2.new(0.511049747, 0, 0.5, 0)
                 ButtonName.Size = UDim2.new(0.984208107, -5, 1, -5)
-         
+                ButtonName.ZIndex = 2
                 ButtonName.Font = Enum.Font.GothamBold
                 ButtonName.Text = Name
                 ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
