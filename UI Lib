@@ -323,6 +323,7 @@ function library:CreateMain()
                 ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
                 ButtonName.TextSize = 14.000
                 ButtonName.TextXAlignment = Enum.TextXAlignment.Left
+                ButtonName.ZIndex = 2
                 
                 Toggle.Name = "Toggle"
                 Toggle.Parent = Button
