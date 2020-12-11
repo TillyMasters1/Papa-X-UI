@@ -26,7 +26,6 @@ function library:CreateMain()
     Note.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Note.BackgroundTransparency = 1.000
     Note.Position = UDim2.new(0.00300000003, -20, 0.959999979, 0)
-    Note.Selectable = false
     Note.Size = UDim2.new(0, 151, 0, 59)
     Note.Font = Enum.Font.GothamBold
     Note.Text = "Papa X vDev"
