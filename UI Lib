@@ -311,6 +311,7 @@ function library:CreateMain()
                 Button.SliceCenter = Rect.new(4, 4, 252, 252)
 
                 ButtonName.Name = "Button Name"
+                ButtonName.AnchorPoint = Vector2.new(0.5, 0.5)
                 ButtonName.Parent = Button
                 ButtonName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 ButtonName.BackgroundTransparency = 1.000
