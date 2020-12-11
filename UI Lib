@@ -176,6 +176,19 @@ function library:CreateMain()
      end
     end)
     
+    p = game.Players.LocalPlayer
+    mouse = p:GetMouse()
+
+    mouse.KeyDown:connect(function(key)
+     if (key:byte() == 50) then
+      if Game.Visible == true then
+       Game.Visible = false
+      else
+       Game.Visible = true
+      end
+     end
+    end)
+    
     spawn(function()
      local UserInputService = game:GetService("UserInputService")
 
