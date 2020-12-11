@@ -318,7 +318,7 @@ function library:CreateMain()
                 ButtonName.BorderSizePixel = 0
                 ButtonName.Position = UDim2.new(0.511049747, 0, 0.5, 0)
                 ButtonName.Size = UDim2.new(0.984208107, -5, 1, -5)
-                ButtonName.ZIndex = 2
+         
                 ButtonName.Font = Enum.Font.GothamBold
                 ButtonName.Text = Name
                 ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -331,6 +331,7 @@ function library:CreateMain()
                 Toggle.BackgroundTransparency = 1.000
                 Toggle.Position = UDim2.new(0, -560, -0.0166666675, 0)
                 Toggle.Size = UDim2.new(0.850000024, 0, 0, 30)
+                Toggle.ZIndex = 1
                 Toggle.Image = "rbxassetid://2790382281"
                 Toggle.ImageColor3 = Color3.fromRGB(255, 38, 0)
                 Toggle.ScaleType = Enum.ScaleType.Slice
