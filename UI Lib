@@ -295,8 +295,6 @@ function library:CreateMain()
                 local Button = Instance.new("ImageButton")
                 local ButtonName = Instance.new("TextLabel")
                 local Click = Instance.new("Sound", game.Workspace)
-                local Toggle = Instance.new("ImageButton")
-                local Frame = Instance.new("ImageButton")
                 Click.SoundId = "rbxassetid://5988647626"
 
                 Button.Name = "Button"
@@ -324,29 +322,6 @@ function library:CreateMain()
                 ButtonName.TextColor3 = Color3.fromRGB(255, 255, 255)
                 ButtonName.TextSize = 14.000
                 ButtonName.TextXAlignment = Enum.TextXAlignment.Left         
-                
-                Toggle.Name = "Toggle"
-                Toggle.Parent = Button
-                Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-                Toggle.BackgroundTransparency = 1.000
-                Toggle.Position = UDim2.new(0, -560, -0.0166666675, 0)
-                Toggle.Size = UDim2.new(0.850000024, 0, 0, 30)
-                Toggle.ZIndex = 1
-                Toggle.Image = "rbxassetid://2790382281"
-                Toggle.ImageColor3 = Color3.fromRGB(255, 38, 0)
-                Toggle.ScaleType = Enum.ScaleType.Slice
-                Toggle.SliceCenter = Rect.new(4, 4, 252, 252)
-
-                Frame.Name = "Frame"
-                Frame.Parent = Toggle
-                Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-                Frame.BackgroundTransparency = 1.000
-                Frame.Position = UDim2.new(0, 530, 0, 0)
-                Frame.Size = UDim2.new(0, 30, 0, 30)
-                Frame.Image = "rbxassetid://2790371148"
-                Frame.ImageColor3 = Color3.fromRGB(255, 38, 0)
-                Frame.ScaleType = Enum.ScaleType.Slice
-                Frame.SliceCenter = Rect.new(32, 32, 224, 224)
                 
                 Button.MouseEnter:Connect(function()
                  TweenService:Create(ButtonName, TweenInfo.new(0.3), {TextColor3 = Color3.fromRGB(0,0,0)}):Play()
