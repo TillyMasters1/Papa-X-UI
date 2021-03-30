@@ -342,4 +342,3 @@ function library:CreateMain()
     end
     return Main
 end
-return library
