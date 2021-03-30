@@ -342,3 +342,11 @@ function library:CreateMain()
     end
     return Main
 end
+
+local main = library:CreateMain()
+
+local catagory = main:CreateCatagory()
+
+local section = catagory:CreateSection('Section')
+
+local button = section:CreateButton('ds')
